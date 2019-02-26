@@ -24,7 +24,7 @@ class Driver {
     )
 
     let passengers = store.passengers.filter(function(passenger){
-      return ids.include(passenger.id)
+      return ids.includes(passenger.id)
     });
 
     return passengers;
