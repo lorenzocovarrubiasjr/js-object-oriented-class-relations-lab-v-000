@@ -58,6 +58,8 @@ class Passenger{
       return ids.includes(driver.id)
     })
 
+    return drivers;
+
   }
 }
 
