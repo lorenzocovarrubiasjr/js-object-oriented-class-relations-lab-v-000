@@ -52,7 +52,12 @@ class Passenger{
       function(trip){
         return trip.driverId
       }
-    );
+    )
+
+    let drivers = store.drivers.filter(function(driver){
+      return ids.includes(driver.id)
+    })
+    
   }
 }
 
