@@ -48,7 +48,11 @@ class Passenger{
     }
 
   drivers(){
-
+    let ids = this.trips().map(
+      function(trip){
+        return trip.driverId
+      }
+    );
   }
 }
 
