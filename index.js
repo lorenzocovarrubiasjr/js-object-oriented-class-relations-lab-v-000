@@ -23,11 +23,9 @@ class Driver {
       }
     )
 
-    let passengers = ids.forEach(function(id){
-        store.passengers.find(function(passenger){
-          return passenger.id === id;
-        })
-    })
+    let passengers = store.passengers.filter(function(passenger){
+      return ids.include(passenger.id)
+    });
 
     return passengers;
   }
