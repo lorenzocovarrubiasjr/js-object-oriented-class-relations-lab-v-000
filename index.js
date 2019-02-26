@@ -57,7 +57,7 @@ class Passenger{
     let drivers = store.drivers.filter(function(driver){
       return ids.includes(driver.id)
     })
-    
+
   }
 }
 
